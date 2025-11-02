@@ -1,0 +1,26 @@
+[
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{}",
+  "letter_head": null,
+  "modified": "2025-11-02 18:33:21.635849",
+  "module": "HRMS Assignment",
+  "name": "Job Applicants by Source",
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Job Applicant",
+  "reference_report": null,
+  "report_name": "Job Applicants by Source",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [],
+  "timeout": 0
+ }
+]

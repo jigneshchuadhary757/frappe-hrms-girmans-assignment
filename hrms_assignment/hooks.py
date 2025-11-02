@@ -242,3 +242,11 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+fixtures = [
+    {"doctype": "Workflow", "filters": [["name", "in", ["Recruitment Workflow"]]]},
+    {"doctype": "Custom Field", "filters": [["dt", "=", "Job Applicant"]]},
+    {"doctype": "Role", "filters": [["role_name", "in", ["HR Manager", "Interviewer", "Hiring Manager"]]]},
+    {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]}
+]
