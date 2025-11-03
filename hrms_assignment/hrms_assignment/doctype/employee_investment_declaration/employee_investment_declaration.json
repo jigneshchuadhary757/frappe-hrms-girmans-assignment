@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-03 18:29:16.029526",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "section_80c",
+  "column_break_pwui",
+  "section_80d",
+  "other_exemptions",
+  "total_investment"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_80c",
+   "fieldtype": "Currency",
+   "label": "Section 80c"
+  },
+  {
+   "fieldname": "section_80d",
+   "fieldtype": "Currency",
+   "label": "Section 80d"
+  },
+  {
+   "fieldname": "other_exemptions",
+   "fieldtype": "Currency",
+   "label": "Other Exemptions"
+  },
+  {
+   "fieldname": "total_investment",
+   "fieldtype": "Currency",
+   "label": "Total Investment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pwui",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-03 18:31:42.397723",
+ "modified_by": "Administrator",
+ "module": "HRMS Assignment",
+ "name": "Employee Investment Declaration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
