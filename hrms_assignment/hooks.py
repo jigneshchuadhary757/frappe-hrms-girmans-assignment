@@ -140,6 +140,9 @@ app_license = "mit"
 doc_events = {
 	"Employee": {
         "on_update": "hrms_assignment.employee_lifecycle.update_employee_status"
+    },
+    "Salary Slip": {
+        "before_submit": "hrms_assignment.payroll_utils.apply_tax_exemptions"
     }
 }
 
@@ -254,5 +257,8 @@ fixtures = [
     ]]]},
     {"doctype": "Role", "filters": [["role_name", "in", ["HR Manager", "Interviewer", "Hiring Manager"]]]},
     {"doctype": "Custom Field", "filters": [["dt", "in", ["Job Applicant", "Employee"]]]},
-    {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]}
+    {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]},
+    {"doctype": "Salary Component", "filters": [["name", "in", ["Basic", "HRA", "Special Allowance", "Provident Fund", "Professional Tax"]]]},
+    {"doctype": "Salary Structure", "filters": [["name", "in", ["Salary Structure 2025"]]]},
+    {"doctype": "Print Format", "filters": [["name", "in", ["Branded Payroll Slip"]]]}
 ]

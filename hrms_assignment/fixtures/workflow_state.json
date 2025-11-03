@@ -66,19 +66,19 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-11-02 20:32:19.935989",
-  "name": "Joining",
+  "modified": "2025-11-02 20:37:44.877850",
+  "name": "Exit",
   "style": "",
-  "workflow_state_name": "Joining"
+  "workflow_state_name": "Exit"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-11-02 20:37:44.877850",
-  "name": "Exit",
+  "modified": "2025-11-02 20:32:19.935989",
+  "name": "Joining",
   "style": "",
-  "workflow_state_name": "Exit"
+  "workflow_state_name": "Joining"
  },
  {
   "docstatus": 0,
