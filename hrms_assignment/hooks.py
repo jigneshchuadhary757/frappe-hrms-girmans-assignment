@@ -240,8 +240,6 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-<<<<<<< Updated upstream
-=======
 
 
 fixtures = [
@@ -258,4 +256,3 @@ fixtures = [
     {"doctype": "Custom Field", "filters": [["dt", "in", ["Job Applicant", "Employee"]]]},
     {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]}
 ]
->>>>>>> Stashed changes
