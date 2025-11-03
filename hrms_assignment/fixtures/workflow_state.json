@@ -1,0 +1,101 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 15:13:53.451433",
+  "name": "Hired",
+  "style": "",
+  "workflow_state_name": "Hired"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 15:10:55.487066",
+  "name": "Job Opening",
+  "style": "",
+  "workflow_state_name": "Job Opening"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 15:13:39.917223",
+  "name": "Offer",
+  "style": "",
+  "workflow_state_name": "Offer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 15:12:59.497126",
+  "name": "Application",
+  "style": "",
+  "workflow_state_name": "Application"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 15:13:13.009662",
+  "name": "Screening",
+  "style": "",
+  "workflow_state_name": "Screening"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 15:13:26.436624",
+  "name": "Interview",
+  "style": "",
+  "workflow_state_name": "Interview"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-06-13 12:48:18.309039",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 20:32:19.935989",
+  "name": "Joining",
+  "style": "",
+  "workflow_state_name": "Joining"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 20:37:44.877850",
+  "name": "Exit",
+  "style": "",
+  "workflow_state_name": "Exit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 20:32:47.733216",
+  "name": "Probation",
+  "style": "",
+  "workflow_state_name": "Probation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-02 20:37:28.630587",
+  "name": "Confirmed",
+  "style": "",
+  "workflow_state_name": "Confirmed"
+ }
+]
