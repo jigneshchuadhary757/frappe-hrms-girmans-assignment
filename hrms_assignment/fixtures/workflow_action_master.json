@@ -1,0 +1,65 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 15:20:55.786150",
+  "name": "Open Application",
+  "workflow_action_name": "Open Application"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 15:22:09.953293",
+  "name": "Move to Screening",
+  "workflow_action_name": "Move to Screening"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 15:22:55.530947",
+  "name": "Schedule Interview",
+  "workflow_action_name": "Schedule Interview"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 15:25:42.959960",
+  "name": "Offer Job",
+  "workflow_action_name": "Offer Job"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 15:28:12.406478",
+  "name": "Mark as Hired",
+  "workflow_action_name": "Mark as Hired"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 20:38:35.526220",
+  "name": "Start Probation",
+  "workflow_action_name": "Start Probation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 20:38:48.379900",
+  "name": "Confirm Employee",
+  "workflow_action_name": "Confirm Employee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-02 20:39:29.769807",
+  "name": "Exit Employee",
+  "workflow_action_name": "Exit Employee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-13 12:48:18.346512",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ }
+]
