@@ -260,7 +260,6 @@ fixtures = [
     {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]},
     {"doctype": "Salary Component", "filters": [["name", "in", ["Basic", "HRA", "Special Allowance", "Provident Fund", "Professional Tax"]]]},
     {"doctype": "Salary Structure", "filters": [["name", "in", ["Salary Structure 2025"]]]},
-    {"doctype": "Print Format", "filters": [["name", "in", ["Branded Payroll Slip"]]]},
-    {"doctype": "DocType", "filters": [["name", "in", ["Employee Investment Declaration"]]]}
+    {"doctype": "Print Format", "filters": [["name", "in", ["Branded Payroll Slip"]]]}
 ]
 
