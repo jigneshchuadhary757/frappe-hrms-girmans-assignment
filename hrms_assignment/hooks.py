@@ -137,13 +137,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Employee": {
+        "on_update": "hrms_assignment.employee_lifecycle.update_employee_status"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -245,8 +243,16 @@ app_license = "mit"
 
 
 fixtures = [
-    {"doctype": "Workflow", "filters": [["name", "in", ["Recruitment Workflow"]]]},
-    {"doctype": "Custom Field", "filters": [["dt", "=", "Job Applicant"]]},
+    {"doctype": "Workflow", "filters": [["name", "in", ["Recruitment Workflow", "Employee Lifecycle"]]]},
+    {"doctype": "Workflow State", "filters": [["workflow_state_name", "in", [
+        "Job Opening", "Application", "Screening", "Interview", "Offer", "Hired", "Rejected",
+        "Joining", "Probation", "Confirmed", "Exit"
+    ]]]},
+    {"doctype": "Workflow Action Master", "filters": [["workflow_action_name", "in", [
+        "Open Application", "Move to Screening", "Schedule Interview", "Offer Job", "Mark as Hired", "Reject",
+        "Start Probation", "Confirm Employee", "Exit Employee"
+    ]]]},
     {"doctype": "Role", "filters": [["role_name", "in", ["HR Manager", "Interviewer", "Hiring Manager"]]]},
+    {"doctype": "Custom Field", "filters": [["dt", "in", ["Job Applicant", "Employee"]]]},
     {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]}
 ]
