@@ -138,12 +138,15 @@ app_license = "mit"
 # Hook on document methods and events
 
 doc_events = {
-	"Employee": {
+    "Employee": {
         "on_update": "hrms_assignment.employee_lifecycle.update_employee_status"
     },
     "Salary Slip": {
         "before_submit": "hrms_assignment.payroll_utils.apply_tax_exemptions"
-    }
+    },
+    "Payroll Entry": {
+        "before_submit": "hrms_assignment.payroll_utils.assign_salary_structure_based_on_regime"
+    },
 }
 
 # Scheduled Tasks
@@ -244,21 +247,88 @@ doc_events = {
 # }
 
 
-
 fixtures = [
-    {"doctype": "Workflow", "filters": [["name", "in", ["Recruitment Workflow", "Employee Lifecycle"]]]},
-    {"doctype": "Workflow State", "filters": [["workflow_state_name", "in", [
-        "Job Opening", "Application", "Screening", "Interview", "Offer", "Hired", "Rejected",
-        "Joining", "Probation", "Confirmed", "Exit"
-    ]]]},
-    {"doctype": "Workflow Action Master", "filters": [["workflow_action_name", "in", [
-        "Open Application", "Move to Screening", "Schedule Interview", "Offer Job", "Mark as Hired", "Reject",
-        "Start Probation", "Confirm Employee", "Exit Employee"
-    ]]]},
-    {"doctype": "Role", "filters": [["role_name", "in", ["HR Manager", "Interviewer", "Hiring Manager"]]]},
-    {"doctype": "Custom Field", "filters": [["dt", "in", ["Job Applicant", "Employee"]]]},
-    {"doctype": "Report", "filters": [["name", "in", ["Job Applicants by Source"]]]},
-    {"doctype": "Salary Component", "filters": [["name", "in", ["Basic", "HRA", "Special Allowance", "Provident Fund", "Professional Tax"]]]},
-    {"doctype": "Salary Structure", "filters": [["name", "in", ["Salary Structure 2025"]]]},
-    {"doctype": "Print Format", "filters": [["name", "in", ["Branded Payroll Slip"]]]}
+    {
+        "doctype": "Workflow",
+        "filters": [["name", "in", ["Recruitment Workflow", "Employee Lifecycle"]]],
+    },
+    {
+        "doctype": "Workflow State",
+        "filters": [
+            [
+                "workflow_state_name",
+                "in",
+                [
+                    "Job Opening",
+                    "Application",
+                    "Screening",
+                    "Interview",
+                    "Offer",
+                    "Hired",
+                    "Rejected",
+                    "Joining",
+                    "Probation",
+                    "Confirmed",
+                    "Exit",
+                ],
+            ]
+        ],
+    },
+    {
+        "doctype": "Workflow Action Master",
+        "filters": [
+            [
+                "workflow_action_name",
+                "in",
+                [
+                    "Open Application",
+                    "Move to Screening",
+                    "Schedule Interview",
+                    "Offer Job",
+                    "Mark as Hired",
+                    "Reject",
+                    "Start Probation",
+                    "Confirm Employee",
+                    "Exit Employee",
+                ],
+            ]
+        ],
+    },
+    {
+        "doctype": "Role",
+        "filters": [
+            ["role_name", "in", ["HR Manager", "Interviewer", "Hiring Manager"]]
+        ],
+    },
+    {
+        "doctype": "Custom Field",
+        "filters": [["dt", "in", ["Job Applicant", "Employee"]]],
+    },
+    {
+        "doctype": "Report",
+        "filters": [
+            ["name", "in", ["Job Applicants by Source", "Tax Regime Comparison"]],
+        ],
+    },
+    {
+        "doctype": "Salary Component",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Basic",
+                    "HRA",
+                    "Special Allowance",
+                    "Provident Fund",
+                    "Professional Tax",
+                ],
+            ]
+        ],
+    },
+    {
+        "doctype": "Salary Structure",
+        "filters": [["name", "in", ["Salary Structure 2025"]]],
+    },
+    {"doctype": "Print Format", "filters": [["name", "in", ["Branded Payroll Slip"]]]},
 ]

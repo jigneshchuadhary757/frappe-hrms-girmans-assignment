@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:employee",
  "creation": "2025-11-03 18:29:16.029526",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,7 +18,8 @@
    "fieldname": "employee",
    "fieldtype": "Link",
    "label": "Employee",
-   "options": "Employee"
+   "options": "Employee",
+   "unique": 1
   },
   {
    "fieldname": "section_80c",
@@ -47,10 +49,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-03 18:31:42.397723",
+ "modified": "2025-11-03 21:51:04.462550",
  "modified_by": "Administrator",
  "module": "HRMS Assignment",
  "name": "Employee Investment Declaration",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
